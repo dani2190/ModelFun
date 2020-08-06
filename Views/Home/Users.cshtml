@@ -1,0 +1,8 @@
+@model List<User>
+
+    <div class="text-center jumbotron jumbotron-danger m-5">
+        <h1>Here are some cool people</h1>
+        @foreach(var pers in Model){
+            <p>@pers.FirstName @pers.LastName</p>
+        }
+    </div>
